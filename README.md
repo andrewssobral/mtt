@@ -9,6 +9,9 @@ Matlab Tensor Tools is an easy-to-use library to work with tensors.
 ```
 Matrix and Tensor Tools for Computer Vision 
 http://www.slideshare.net/andrewssobral/matrix-and-tensor-tools-for-computer-vision
+
+Incremental and Multi-feature Tensor Subspace Learning applied for Background Modeling and Subtraction
+https://github.com/andrewssobral/imtsl
 ```
 
 Citation
