@@ -27,8 +27,8 @@ tensor_demo_tsvd.m - t-SVD and inverse t-svd
 tensor_demo_subtensors_ntf_hals.m - Low-rank approximation based Non-Negative Tensor(CP) factorization
 ```
 
-Basic Tensor Operations
------------------------
+Example of basic tensor operations
+----------------------------------
 ```Matlab
 A = reshape(1:12,[2,2,3]);
 B = reshape(1:12,[2,2,3]);
