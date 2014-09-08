@@ -37,12 +37,13 @@ tensor_demo_tsvd.m - t-SVD and inverse t-svd
 tensor_demo_subtensors_ntf_hals.m - Low-rank approximation based Non-Negative Tensor(CP) factorization
 ```
 
-Example of basic tensor operations
-----------------------------------
+Example of tensor operations
+----------------------------
 ```Matlab
 A = reshape(1:12,[2,2,3]);
 B = reshape(1:12,[2,2,3]);
 
+%% Basic operations
 [A1,A2,A3] = tensor_matricization(A);
 
 Au = tensor_unfold(A);
@@ -58,4 +59,21 @@ A_hat = tensor_fold(Au,size(A));
 
 Bt = tensor_transpose(B);
 [C] = tensor_product(A,B);
+
+%% HoSVD and iHoSVD decomposition
+T = tensor(A);
+[core,U] = tensor_hosvd(T);
+[T_hat] = tensor_ihosvd(core,U);
+
+%% t-SVD decomposition
+[U,S,V] = tensor_t_svd(A);
+[C] = tensor_product(U,S);
+[A_hat] = tensor_product(C,tensor_transpose(V));
+
+%% Tucker ALS decomposition
+r = 10;
+T_hat = tucker_als(T,[r r r]);
+
+%% PARAFAC/CP ALS decomposition
+T_hat = cp_als(T, r);
 ```
