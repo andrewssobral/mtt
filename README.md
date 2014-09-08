@@ -4,6 +4,8 @@ MTT
 ---
 Matlab Tensor Tools is an easy-to-use library to work with tensors.
 
+<p align="center"><img src="https://sites.google.com/site/andrewssobral/tensor_slices_full.png" /></p>
+
 Citation
 ---------
 Please, if you use this code for your publications, please cite it as:
