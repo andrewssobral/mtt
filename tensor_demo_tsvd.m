@@ -9,7 +9,6 @@ addpath('libs/nway331');
 %% LOAD DATASET
 load('dataset/trafficdb/traffic_patches.mat');
 A = double(imgdb{100});
-T = tensor(A);
 
 %% Tensor t-SVD decomposition
 [U,S,V] = tensor_t_svd(A);
