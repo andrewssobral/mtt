@@ -5,11 +5,13 @@ close all; clear all; clc;
 addpath('libs/poblano_toolbox_1.1');
 addpath('libs/tensor_toolbox_2.5');
 addpath('libs/nway331');
+% addpath('libs/tensorlab'); % for slice3(...)
 
 %% LOAD DATASET
 load('dataset/trafficdb/traffic_patches.mat');
 A = double(imgdb{100});
 T = tensor(A);
+% slice3(A), colormap('gray');
 
 %% TENSOR HOSVD
 [core,U] = tensor_hosvd(T);
