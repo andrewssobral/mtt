@@ -1,0 +1,56 @@
+TRAFFIC DATABASE
+
+Statistical Visual Computing Lab
+University of California, San Diego
+Antoni Chan  [abchan@ucsd.edu]
+
+-- NOTES --
+This a database of video of traffic on the highway used in [1] and [2].  The 
+video was taken over two days from a stationary camera overlooking I-5 in 
+Seattle, WA.  The video were labeled manually as light, medium, and heavy 
+traffic, which correspond respectively to free-flowing traffic, traffic at 
+reduced speed, and stopped or very slow speed traffic.  The training and test
+sets used in [1] and [2] are also provided.  The first frame of the original
+video is corrupted with another video signal, so when processing each video 
+you will have to start from the 2nd frame.  In addition, the cropped versions
+of the video used in [1,2] are provided in a MATLAB file.  The video is 
+provided courtesy of Washington State Department of Transportation 
+[http://www.wsdot.wa.gov/].  Please reference [1] if you use this database.
+
+
+-- FILES --
+  README_TRAFFICDB - this file
+  info.txt         - more information about each video
+  ImageMaster      - the index number and class for each video
+  ImageMaster.mat  - MATLAB file of ImageMaster
+  EvalSet_train    - each row is a training set
+  EvalSet_test     - each row is a test set for the corresponding training set
+  EvalSet.mat      - MATLAB file of EvalSets
+  video/           - the traffic videos
+  traffic_patches.mat     - traffic patches of video
+  traffic_patches_reg.mat - traffic patches, registered by hand
+
+-- LOCATION --
+Source:    http://www.wsdot.wa.gov/
+City:      Seattle, WA.
+Location:  I-5 S 188th St.
+Direction: looking south
+Traffic:   Southbound traffic
+Date:      08/05/2004 to 08/06/2004
+Loop:      152.2
+
+
+-- REFERENCES --
+[1] A. B. Chan and N. Vasconcelos, "Probabilistic Kernels for the Classification
+    of Auto-Regressive Visual Processes".  Proceedings of IEEE Conference on 
+    Computer Vision and Pattern Recognition, San Diego, 2005. 
+
+[2] A. B. Chan and N. Vasconcelos, "Classification and Retrieval of Traffic 
+    Video using Auto-Regressive Stochastic Processes".  Proceedings of 2005
+    IEEE Intelligent Vehicles Symposium, Las Vegas, June 2005.
+
+
+VERSIONS:
+  checks w/ new vidtex20070309
+Last Update: 07-13-2007
+
