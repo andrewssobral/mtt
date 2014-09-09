@@ -34,6 +34,7 @@ tensor_demo_hosvd_ihosvd.m - High-order singular value decomposition (Tucker dec
 tensor_demo_parafac_als.m - CP decomposition via ALS (Alternating Least-Squares)
 tensor_demo_tucker_als.m - Tucker decomposition via ALS (Alternating Least-Squares)
 tensor_demo_tsvd.m - t-SVD and inverse t-svd
+tensor_demo_ntf.m - Non-Negative Tensor Factorization
 tensor_demo_subtensors_ntf_hals.m - Low-rank approximation based Non-Negative Tensor(CP) factorization
 ```
 
