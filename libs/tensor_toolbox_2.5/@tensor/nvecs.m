@@ -38,9 +38,9 @@ end
 
 Xn = double(tenmat(X,n));
 Y = Xn*Xn';
-
+warning off;
 [u,d] = eigs(Y, r, 'LM', eigsopts);
-
+warning on;
 if isfield(opts,'flipsign') 
     flipsign = opts.flipsign;
 else
