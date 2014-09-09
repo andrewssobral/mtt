@@ -19,7 +19,7 @@ Citation
 Please, if you use this code for your publications, please cite it as:
 ```
 @misc{asobral2014,
-    author       = "Sobral, A.",
+    author       = "Sobral, Andrews",
     title        = "Matlab Tensor Tools",
     year         = "2014",
     url          = "https://github.com/andrewssobral/mtt/"
