@@ -18,6 +18,12 @@ A2 = tensor_unfolding(A,2);
 A3 = tensor_unfolding(A,3);
 [A1,A2,A3] = tensor_matricization(A);
 
+M22 = reshape(1:4,[2,2]);
+M33 = reshape(1:9,[3,3]);
+B1 = tensor_nmodeproduct(A,M22,1);
+B2 = tensor_nmodeproduct(A,M22,2);
+B3 = tensor_nmodeproduct(A,M33,3);
+
 Au = tensor_unfold(A);
 A_hat = tensor_fold(Au,size(A));
 
