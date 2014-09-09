@@ -39,7 +39,7 @@ for i = 2:10
   err = norm(full(T)-D{i})/norm(D{i});
   fprintf('tensor #%d has error %f\n',i,err);
 end
-%%% Compute STA with forgetting factor alpha = 0.1
+%%% Compute STA with forgetting factor alpha = 0.9
 [T,S] = STA(D{1},[2,3,4]);
 alpha = 0.9;
 for i = 2:10
