@@ -16,7 +16,7 @@ https://github.com/andrewssobral/imtsl
 
 Citation
 ---------
-Please, if you use this code for your publications, please cite it as:
+If you use this code for your publications, please cite it as:
 ```
 @misc{asobral2014,
     author       = "Sobral, Andrews",
