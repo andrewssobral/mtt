@@ -29,6 +29,7 @@ r = 10;
 [B,H,C,P,fit] = parafac2(A,r);
 
 %% PARAFAC2 reconstruction
+clear X;
 for i = 1:size(C,1)
   X(:,:,i) = B*diag(C(i,:))*(P{i}*H)';
 end
