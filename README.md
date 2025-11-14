@@ -4,7 +4,7 @@ Last update: **08/09/2014**
 
 MTT
 ---
-Matlab Tensor Tools is an easy-to-use library to work with tensors.
+**Matlab Tensor Tools (MTT)** is a lightweight MATLAB library providing a comprehensive set of functions for manipulating and decomposing tensors, aimed especially at applications in computer vision and multidimensional signal processing. It includes utilities for tensor unfolding/folding, slicing, fiber extraction, n-mode products, tensor–tensor operations, and demos covering key decompositions such as HoSVD/iHoSVD, Tucker via ALS, CP/PARAFAC via ALS, t-SVD, non-negative tensor factorization, and incremental tensor learning. The repo is stable, compact, and example-driven, making it easy for researchers and students to explore tensor algebra workflows in MATLAB.
 
 <p align="center"><img src="https://raw.githubusercontent.com/andrewssobral/mtt/master/docs/tensor_slices_full.png" /></p>
 
